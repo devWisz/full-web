@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <header class="header">
+            <h1>URL Shortener</h1>
+            <p class="tagline">Make your links shorter and cleaner</p>
+        </header>
+
+        <div class="main-card">
+            <div class="input-section">
+                <label for="urlInput">Paste your long URL here</label>
+                <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        id="urlInput" 
+                        placeholder="https://example.com/your-long-url"
+                        autocomplete="off"
+                    >
+                    <button id="shortenBtn" class="btn-primary">
+                        <span class="btn-text">Shorten URL</span>
+                    </button>
+                </div>
+                <p id="error" class="error-msg"></p>
+            </div>
+
+            <div id="result" class="result-section hidden">
+                <label>Your shortened URL</label>
+                <div class="result-wrapper">
+                    <input type="text" id="shortURL" readonly>
+                    <button id="copyBtn" class="btn-copy">
+                        <span id="copyText">Copy</span>
+                    </button>
+                    <button id="visitBtn" class="btn-visit">Visit</button>
+                </div>
+            </div>
+        </div>
+
 </body>
 </html>

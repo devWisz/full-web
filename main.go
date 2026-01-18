@@ -1,8 +1,17 @@
-package main 
+package main
 
-import "fmt"
+import (
+	"encoding/json"
+	"fmt"
+	"log"
+	"math/rand"
+	"net/http"
+	"time"
+)
 
-
-func main (){
-	fmt.Println("Just starting the project")
+type URL struct {
+	Original string    `json:"original"`
+	Short    string    `json:"short"`
+	Created  time.Time `json:"created"`
 }
+
