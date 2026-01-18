@@ -19,3 +19,75 @@
     --shadow: rgba(15, 23, 42, 0.08);
 }
 
+body {
+    font-family: 'Inter',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background : var(--bg);
+    min-height : 100vh;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    padding : 40px 20px;
+    color : var(--text-primary);
+    line-height: 1.6;
+}
+
+.container {
+    max-width : 600px;
+    width : 100%;
+}
+
+.header {
+    text-align : center ;
+    margin-bottom : 48px;
+}
+
+h1{
+    font-size : 2.5 rem;
+    color : var(--text-primary);
+    margin-bottom : 12px;
+    letter-spacing: -0.02em;
+    font-weight : 700;
+}
+
+.tagline {
+    color : var (--text-secondary);
+    font-size : 1rem;
+    font-weight : 400;
+}
+
+
+.main-card {
+    background : var(--card-bg);
+    padding: 48px;
+    border-radius: 16px;
+    box-shadow : 0 1px 3px var(--shadow);
+    border : 1px solid var(--border);
+    margin-bottom: 32px;
+
+}
+
+.input-section label {
+    display: block ;
+    color : var(--text-primary);
+    font-weight : 500;
+    margin-bottom : 12px;
+    font-size : 0.875 rem;
+}
+
+.input-wrapper {
+    display : flex;
+    gap : 12px;
+    margin-bottom: 8px;
+}
+
+input [type= "text"]{
+    flex:1;
+    padding : 14px 16px;
+    border: 1px solid var(--border);
+    border-radius : 8px;
+    font-size : 15px;
+    font-family : inherit;
+    transition : all 0.2s ease;
+    background : var(--card-bg);
+    color : var(--text-primary);
+}
