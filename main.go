@@ -18,15 +18,12 @@ type URL struct {
 var urlMap = make(map[string]string)
 
 func generateShortCode() string {
-}
-
+	const chars ="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
 
 func main() {
-
+	
 	http.HandleFunc("/shorten", shortenHandler)
 	http.HandleFunc("/r/", redirectHandler)
 
 }
-
-

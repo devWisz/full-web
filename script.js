@@ -33,3 +33,28 @@ if (!isValidURL(url)){
     return;
 }
 }
+
+try {
+        const response = await fetch(`${API}/shorten`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ url })
+        });
+
+        const data = await response.json();
+        const shortURL = `${API}/r/${data.short}`;
+
+        document.getElementById('shortURL').value = shortURL;
+        document.getElementById('result').classList.remove('hidden');
+
+        urls.unshift({ original: url, short: shortURL, code: data.short });
+        updateHistory();
+        input.value = '';
+
+    } catch (error) {
+        showError('Will take some time!');
+    }
+}
+
+function copyURL() {
+}
