@@ -15,3 +15,18 @@ type URL struct {
 	Created  time.Time `json:"created"`
 }
 
+var urlMap = make(map[string]string)
+
+func generateShortCode() string {
+}
+
+
+
+func main() {
+
+	http.HandleFunc("/shorten", shortenHandler)
+	http.HandleFunc("/r/", redirectHandler)
+
+}
+
+
