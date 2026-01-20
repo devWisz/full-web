@@ -1,8 +1,4 @@
-URL Shortener
-
-A simple full-stack URL Shortener built using Go (Golang) for the backend and HTML, CSS, and JavaScript for the frontend.
-
-This project allows users to convert long URLs into short, shareable links and redirect back to the original URL using the generated short code.
+Full-Web is a URL shortener project that allows you to clean and shorten long and unclean URLs to make them more polished and concise. It also keeps track of your shortened URLs in your terminal and makes your life easier
 
 
 Features
@@ -17,7 +13,7 @@ Features
 
 5.Copy short URL with one click
 
-6. Completely free to use
+6.Completely free to use
 
 
 
@@ -26,13 +22,6 @@ Free to Use
 This project is completely free to use, modify, and extend for learning and personal projects.
 
 
-Try it in one click : 
-
-
-
-
-
 Developed and Design By
 
-Sarjak Khanal aka devWisZ
-
+Sarjak Khanal aka devWisZ 

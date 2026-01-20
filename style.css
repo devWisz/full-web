@@ -32,7 +32,7 @@ body {
 }
 
 .container {
-    max-width : 450px;
+    max-width : 520px;
     width : 100%;
 }
 
@@ -168,7 +168,7 @@ input[type="text"]::placeholder{
     border-radius: 8px;
     font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
     color: var(--text-primary);
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .btn-copy,
@@ -190,16 +190,6 @@ input[type="text"]::placeholder{
 
 .btn-copy:hover {
     background: var(--primary-hover);
-}
-
-.btn-visit {
-    background: var(--card-bg);
-    color: var(--text-primary);
-    border: 1px solid var(--border);
-}
-
-.btn-visit:hover {
-    background: var(--bg);
 }
 
 .footer {
