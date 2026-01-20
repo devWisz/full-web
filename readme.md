@@ -7,19 +7,18 @@ This project allows users to convert long URLs into short, shareable links and r
 
 Features
 
-Clean and responsive frontend UI
+1.Clean and responsive frontend UI
 
-URL validation on the client side
+2.URL validation on the client side
 
-Random short code generation
+3.Random short code generation
 
-Fast redirection using HTTP 302
+4.Fast redirection using HTTP 302
 
-CORS enabled for frontend–backend communication
+5.Copy short URL with one click
 
-Copy short URL with one click
+6. Completely free to use
 
-Completely free to use
 
 
 Free to Use
@@ -28,6 +27,8 @@ This project is completely free to use, modify, and extend for learning and pers
 
 
 Try it in one click : 
+
+
 
 
 
