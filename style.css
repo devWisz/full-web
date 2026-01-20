@@ -115,3 +115,26 @@ input[type="text"]::placeholder{
     font-family: inherit;
     transition : all 0.2s ease;
 }
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+}
+
+.btn-primary:active {
+    transform : scale(0.98);
+}
+
+.btn-primary:disabled{
+    background : var(--text-secondary);
+    cursor : not allowed;
+
+}
+
+
+.error-msg {
+
+    color: var(--error);
+    font-size : 0.9 rem;
+    margin-top : 8px;
+    font-weight : 400;
+}
